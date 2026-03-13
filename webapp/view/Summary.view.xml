@@ -1,0 +1,19 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.Summary"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel
+		headerText="Summary"
+		class="sapUiResponsiveMargin"
+		width="auto">
+		<content>
+			<VBox class="sapUiSmallMargin">
+				<Text text="Invoices: {summary>/invoiceCount}" />
+				<Text text="Total Quantity: {summary>/totalQuantity}" />
+				<ObjectNumber
+					number="{summary>/totalPrice}"
+					unit="EUR" />
+			</VBox>
+		</content>
+	</Panel>
+</mvc:View>
